@@ -1,5 +1,4 @@
 "use client";
-import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 interface Post {
@@ -9,7 +8,6 @@ interface Post {
 }
 
 export default function Page() {
-  const router = useRouter();
   const [posts, setPosts] = useState<Post[]>([]);
   
   useEffect(() => {
